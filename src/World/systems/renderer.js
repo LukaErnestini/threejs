@@ -1,9 +1,9 @@
-import { Renderer } from 'three';
+import { WebGLRenderer } from 'three';
 
 function createRenderer() {
-  const instance = new Renderer();
+  const renderer = new WebGLRenderer();
 
-  return instance;
+  return renderer;
 }
 
 export { createRenderer };

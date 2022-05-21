@@ -1,9 +1,11 @@
-import { Scene } from 'three';
+import { Color, Scene } from 'three';
 
 function createScene() {
-  const instance = new Scene();
+  const scene = new Scene();
 
-  return instance;
+  scene.background = new Color('skyblue');
+
+  return scene;
 }
 
 export { createScene };
