@@ -1,4 +1,8 @@
-import { BoxBufferGeometry, Mesh, MeshBasicMaterial } from 'three';
+import {
+  BoxBufferGeometry,
+  Mesh,
+  MeshBasicMaterial,
+} from 'https://cdn.skypack.dev/three@0.140.2';
 
 function createCube() {
   // create a geometry

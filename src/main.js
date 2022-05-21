@@ -12,5 +12,6 @@ function main() {
   world.render();
 }
 
-// call main to start the app
-main();
+// call main to start the app, when button is clicked
+document.querySelector('#start').addEventListener('click', main);
+//main();
