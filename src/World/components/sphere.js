@@ -6,7 +6,7 @@ import {
 
 function createSphere() {
   // create a geometry
-  const geometry = new SphereGeometry(2);
+  const geometry = new SphereGeometry(2, 8, 8);
 
   // create a default (white) Basic material
   const material = new MeshStandardMaterial({ color: 0xffff00 });
