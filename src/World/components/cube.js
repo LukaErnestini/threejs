@@ -2,6 +2,7 @@ import {
   BoxBufferGeometry,
   Mesh,
   MeshStandardMaterial,
+  MathUtils,
 } from 'https://cdn.skypack.dev/three@0.140.2';
 
 function createCube() {
@@ -15,6 +16,15 @@ function createCube() {
   const cube = new Mesh(geometry, material);
 
   cube.rotation.set(-0.5, -0.1, 0.7);
+
+  const radiansPerSecond = MathUtils.degToRad(6001);
+
+  cube.tick = (delta) => {
+    // increase the cube's rotation each frame
+    cube.rotation.z += radiansPerSecond * delta * 15;
+    // cube.rotation.x += radiansPerSecond * delta;
+    // cube.rotation.y += radiansPerSecond * delta;
+  };
 
   return cube;
 }

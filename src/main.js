@@ -9,9 +9,12 @@ function main() {
   const world = new World(container);
 
   // 2. Render the scene
-  world.render();
+  //// produce a single frame (render on demand)
+  ////world.render();
+  // start the loop (produce a stream of frames)
+  world.start();
 }
 
 // call main to start the app, when button is clicked
-// document.querySelector('#start').addEventListener('click', main);
+//// document.querySelector('#start').addEventListener('click', main);
 main();
